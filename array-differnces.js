@@ -23,3 +23,18 @@ function arrayDiff(...arrays) {
         return arr.filter(x => !unique.includes(x));
     }));
 }
+
+
+// the number of element pairs having the required difference.
+function pairs(k, arr) {
+    const s = new Set(arr);
+    console.log(arr);
+    return arr.reduce((ac,v) => s.has(v-k) ? ac+1: ac,0);
+
+}
+
+
+
+
+
+
